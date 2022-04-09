@@ -42,7 +42,7 @@ namespace Core6.Utilities.Mail
                 //    Convert.ToInt32(_configuration.GetSection("EmailConfiguration").GetSection("SmtpPort").Value),
                 //    SecureSocketOptions.StartTls);
                 emailClient.Connect("smtp.gmail.com");
-                emailClient.Authenticate("dogwalker7@gmail.com", "adminLeyligul*");
+                emailClient.Authenticate(" ", " ");
                
                 emailClient.Send(message);
                 emailClient.Disconnect(true);
